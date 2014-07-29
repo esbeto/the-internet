@@ -6,8 +6,24 @@
     deck.parent.appendChild(el);
   };
 
+  bespoke.plugins.audio = function(deck) {
+    deck.on('activate', function(e) {
+      if (typeof e.slide.dataset.bespokeState !== "undefined") {
+        if (e.slide.dataset.bespokeState.indexOf("audio") != -1) {
+          var audiofile = e.slide.dataset.bespokeState.split(' ')[0];
+          var audiotag = document.createElement('audio');
+          audiotag.src = "../audio/" + audiofile + ".ogg";
+          audiotag.load();
+          deck.parent.appendChild(audiotag);
+          audiotag.play();
+        }
+      }
+    });
+  };
+
   bespoke.from('article', {
     backgroundElement: true,
+    audio: true,
     bullets: 'li, .bullet',
     keys: true,
     hash: true,
