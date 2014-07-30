@@ -6,13 +6,13 @@ slide_width = 640px
 slide_height = 480px
 slide_background = transparent
 
-slide_transition_length = .6s
-slide_transition_easing = ease
+slide_transition_length = 0s
+slide_transition_easing = ease-in-out
 slide_transition_rotate_y = 90deg
 // Safari bugs out on 3d transform-origins, so we have to fake it
 slide_transition_nudge_x = -100px
 
-bullet_transition_length = .3s
+bullet_transition_length = .1s
 bullet_transition_easing = ease
 bullet_transition_translate_x = 16px
 
@@ -254,3 +254,179 @@ a
 
 .antesdelinternet .background
   background-image url('../images/antesdelinternet.jpg')
+
+.starintro
+  .background
+    background-color #000
+    background-size 400% 400%
+  h4
+    color #0FF
+    font-size 2.4em
+
+.starinternet
+  .background
+    background-image url('../images/starinternet.png')
+    background-color #000
+    transition: background-size 10s linear;
+  .bespoke-active ~ .background
+    background-size 0 0
+
+.arpanet
+  .background
+    background-image url('../images/arpanet.jpg')
+    background-size 80% auto
+
+.kleinrock
+  .background
+    background-image url('../images/kleinrock.jpg')
+  h1
+    color: #FFF
+    font-weight 900
+    text-shadow: 4px 4px 0 #000
+
+.kleinrock2
+  .background
+    background-image url('../images/kleinrock.jpg')
+    opacity 0.3
+
+.telephone
+  .background
+    background-color #000
+
+  li
+    color #0F0
+    font-family monospace
+    display inline-block
+
+
+.crash
+  .background
+    background-color #00F
+  h1
+    color #fff
+    font-family monospace
+
+.revolution
+  .background
+   background-color #00F
+   opacity 0.5
+
+  h3
+    color #FFF
+
+.fast
+  .background
+    background-image url('../images/fast.gif')
+  h3
+    color #fff
+
+.inter1 .background
+  background-image url('../images/inter1.jpg')
+.inter2 .background
+  background-image url('../images/inter2.jpg')
+.inter3 .background
+  background-image url('../images/inter3.jpg')
+.inter4 .background
+  background-image url('../images/inter4.jpg')
+.inter5 .background
+  background-image url('../images/inter5.png')
+.inter6 .background
+  background-image url('../images/inter6.gif')
+.inter7 .background
+  background-image url('../images/inter7.png')
+.inter8 .background
+  background-image url('../images/inter8.gif')
+  background-size 80% auto
+
+iframe
+  height 100%
+  width 100%
+
+.polymer,
+.evolution
+  .bespoke-slide
+    top: 32%
+    left 30%
+    height 750px
+    width 1100px
+
+.tahir
+  .background
+    background-color #000
+    background-image url('../images/tahir.jpg')
+  li
+    color #fff
+    margin-top -4em
+
+.mobilegrowth
+  section
+    background-image url('../images/mobilegrowth.gif')
+    background-repeat no-repeat
+    background-position center center
+
+.technology
+  .background
+    background-image url('../images/technology.png')
+  h1
+    color: #66F
+    text-shadow: 10px 10px 0 #FFF
+    font-weight 900
+
+.movefast
+  .background
+    background-image url('../images/movefast.gif')
+  h3
+    color #FFF
+
+.cockblock
+  .background
+    background-image url('../images/cockblock.gif')
+
+.gloomy
+  .background
+    background-color #000
+    background-image url('../images/gloomy.gif')
+    background-size 80% auto
+
+.future
+  .background
+    background-image url('../images/future.gif')
+  h1
+    color #FFF
+
+.magic
+  .background
+    background-image url('../images/magic.gif')
+  h1
+    color #fff
+    margin-top: 2em
+    font-weight 800
+    font-size 0em
+    text-shadow: 0 0 60px #FFF
+    transition: text-shadow 2s linear;
+  .bespoke-active h1
+    font-size 6em
+
+.programming
+  .background
+    background-image url('../images/programming.gif')
+    background-size auto 100%
+
+.patrick
+  .background
+    background-image url('../images/patrick.gif')
+
+.uber
+  .background
+    background-color #000
+    background-image url('../images/uber.jpg')
+    background-size auto 100%
+
+.kickstarter
+  .background
+    background-image url('../images/kickstarter.jpg')
+
+.wikipedia
+  .background
+    background-image url('../images/wikipedia.png')
+    background-size auto 100%
