@@ -258,7 +258,7 @@ a
 .starintro
   .background
     background-color #000
-    background-size 400% 400%
+    background-size 400% auto
   h4
     color #0FF
     font-size 2.4em
@@ -269,7 +269,7 @@ a
     background-color #000
     transition: background-size 10s linear;
   .bespoke-active ~ .background
-    background-size 0 0
+    background-size 0 auto
 
 .arpanet
   .background
@@ -429,4 +429,15 @@ iframe
 .wikipedia
   .background
     background-image url('../images/wikipedia.png')
+    background-size auto 100%
+
+.websites
+  .background
+    background-image url('../images/websites.jpg')
+    background-size auto 100%
+
+.letsmakemoney
+  .background
+    background-color #000
+    background-image url('../images/letsmakemoney.gif')
     background-size auto 100%
