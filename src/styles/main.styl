@@ -353,27 +353,44 @@ iframe
     height 750px
     width 1100px
 
+.tahirpre
+  .background
+    background-size 180% auto
+
 .tahir
   .background
     background-color #000
     background-image url('../images/tahir.jpg')
+    transition: background-size 5s linear;
   li
     color #fff
     margin-top -4em
+  .bespoke-active ~ .background
+    background-size 100% auto
 
 .mobilegrowth
   section
     background-image url('../images/mobilegrowth.gif')
     background-repeat no-repeat
     background-position center center
+  .background
+    background-size: 400% auto
 
 .technology
   .background
     background-image url('../images/technology.png')
+    transition: background-size 6s linear;
   h1
     color: #66F
     text-shadow: 10px 10px 0 #FFF
     font-weight 900
+  .bespoke-active ~ .background
+    background-size 100% auto
+
+  &.second
+    section
+      background-image url('../images/explosion.gif')
+      background-size 100% auto
 
 .movefast
   .background
@@ -437,7 +454,10 @@ iframe
 .websites
   .background
     background-image url('../images/websites.jpg')
-    background-size auto 100%
+    transition: background-size 6s linear
+
+  .bespoke-active ~ .background
+    background-size auto 130%
 
 .letsmakemoney
   .background
